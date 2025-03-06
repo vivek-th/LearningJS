@@ -1,0 +1,59 @@
+*{
+    /* margin: 0;
+    border: 0; */
+    /* box-sizing: border-box; */
+}
+
+body{
+    width: 100vw ;
+}
+
+h1{
+    border: 2px dashed red;
+    width: 1000PX;
+}
+p{
+    /* text-decoration: line-through; */
+    text-align: justify;
+    text-transform: capitalize;
+    /* letter-spacing: 0.1em; */
+    /* line-height: 2rem; */
+    /* font-weight: bold; */
+    
+}
+
+em{
+    font-style: oblique;
+}
+
+/* working with anchor styling */
+a{
+    text-decoration:underline ;
+    color: blue;
+
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    cursor: pointer;
+    
+}
+a:active{
+    color: red;
+}
+ol{
+    /* list-style-type: circle; */
+    /* list-style-type: decimal; */
+    /* list-style-type: upper-alpha; */
+    /* list-style-type: upper-latin;
+    list-style-type: lower-alpha; */
+    list-style-type: lower-roman;
+}
+ul{
+    list-style-type: square;
+    color: blue;
+    text-align: center;
+    list-style-position: inside;
+    
+}

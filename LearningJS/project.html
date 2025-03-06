@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Table</title>
+
+    <style>
+      .error {
+        border-color: red;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .prime {
+        background-color: orangered;
+      }
+      .even {
+        background-color: green;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Generate Number Table</h1>
+    <label for="startNo">Start Number: </label>
+    <input type="text" id="startNo" /><br /><br />
+    <label for="endNo">End Number: </label>
+    <input type="text" id="endNo" /><br /><br />
+    <button onclick="generateTable()">Generate Table</button>
+    <br /><br />
+    <table id="numberTable"></table>
+
+    <script src="project.js"></script>
+  </body>
+</html>

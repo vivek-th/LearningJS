@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 class="myheadings">This is monday</h1>
+      <h1 class="myheadings">This is Tuesday heading</h1>
+      <h1 class="myheadings">This is third heading</h1>
+      
+    </div>
+  </body>
+  <script>
+    const theparent = document.querySelector(".parent");
+    console.log(theparent.children);
+    for(let i=0; i<theparent.children.length; i++){
+        console.log(theparent.children[i].innerHTML)
+    }
+    theparent.children[1].style.color="yellow"
+    theparent.children[0].style.background="pink"
+
+    const children= document.querySelector(".myheadings")
+    console.log(children.parentElement);
+    console.log(children.nextElementSibling.innerHTML);
+    console.log(theparent.childNodes)
+
+    const div=document.createElement('div');
+    console.log(div)
+    div.setAttribute("id","divid")
+    div.className="divclass";
+    div.style.backgroundColor="green";
+    div.innerHTML="hey i am vivek"
+    document.body.appendChild(div)
+
+    
+
+  </script>
+</html>

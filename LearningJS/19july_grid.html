@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Grid</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+
+      .header,
+      .footer {
+        grid-column: 1 / span 3;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .menu {
+        grid-column: 1 / span 1;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .main {
+        grid-column: 2 / span 2;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+
+      .aside {
+        grid-column: 1 / span 3;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .nested-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .grid-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+
+        .header,
+        .footer,
+        .menu,
+        .main,
+        .aside {
+          grid-column: 1 / span 1;
+        }
+
+        .nested-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="main">
+        Main Content
+        <div class="nested-grid">
+          <div class="grid-item">Nested 1</div>
+          <div class="grid-item">Nested 2</div>
+          <div class="grid-item">Nested 3</div>
+        </div>
+      </div>
+      <div class="aside">Aside</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

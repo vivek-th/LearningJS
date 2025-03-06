@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    this is the html page
+    <ul class="mylist">
+        <li> javascript </li>
+    </ul>
+</body>
+
+<script>
+    function addlist(name){
+        const newlist= document.createElement('li');
+         const list=document.querySelector('.mylist');
+        
+        newlist.innerHTML=`${name}`
+        list.appendChild(newlist)
+        console.log(list)
+    }
+    addlist("html");
+    addlist("css")
+</script>
+</html>

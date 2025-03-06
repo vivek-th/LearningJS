@@ -1,0 +1,33 @@
+<form action="https://httpbin.org/get" method="get">
+  <label for="Year" aria-required="true">Year</label>
+
+  <input type="number" min="1950" max="2024" step="10 " />
+
+  <select name="cofee" id="coffee">
+    <optgroup label="Indian coffes.">
+      <option value="dalgona">dalgona</option>
+      <option value="cold" selected>cold</option>
+    </optgroup>
+    <optgroup label="Foregin cofee">
+      <option value="lattee">latee</option>
+      <option value="americano" selected>americano</option>
+      <option value="capuchino">capacino</option>
+      <option value="cold">cold</option>
+    </optgroup>
+  </select>
+
+  <fieldset>
+    <legend>Wht is your favourite food</legend>
+    <p>
+      <input type="radio" id="pizza" name="food" />
+      <label for="pizza">pizza</label>
+    </p>
+    <p>
+      <input type="radio" id="burger" name="food" />
+      <label for="burger">burger</label>
+    </p>
+  </fieldset>
+
+  <button type="submit">submit</button>
+  
+</form>
